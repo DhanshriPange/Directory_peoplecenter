@@ -61,11 +61,11 @@ nav ul  a:hover{
     padding-top: 0%;
 }
 .card{
-    max-width: 91vw;
-    margin: 37px auto;
+    max-width: 25px;
+    margin: auto;
     padding-top: 5%;
     padding-bottom: 5%;
-    height: 50vh;
+    height: 25px;
     display: inline-block; 
     overflow: hidden;
     justify-content: center;

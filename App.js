@@ -1,27 +1,40 @@
 
-import React, {lazy } from "react";
- import DemoTable2 from './Components/DemoTable2';
- import { Routes  } from 'react-router-dom';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-const Directory = lazy(() => import("./Components/Directory"));
+import React from "react";
+import DemoTable2 from './Components/DemoTable2'; import Directory from "./Components/Directory";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { Header } from "antd/lib/layout/layout";
+
+
+
+
 
 
 function App() {
+  // function Emppage=()=>{
+  //   return
+  // }
   return (
+<div>
     <Router>
-      <div className="app-container">
-        
-        <Routes>
-       
-        <Route exact path="/" component={Directory} />
-            <Route path="/demoTable2" component={DemoTable2} />
-            <Route path='/directory' element={<DemoTable2/>} />
-        </Routes>
-      
-      </div>
+      <Switch>
+
+
+        {/* <Directory /> */}
+
+        {/* <Link to="/demotable2">Emp_data</Link> */}
+      <Route exact path="/" component={Directory} />
+        <Route exact path="/demotable2" component={DemoTable2}/>
+
+
+
+
+
+      </Switch>
+
     </Router>
+</div>
+
   );
 }
-
 export default App;
 

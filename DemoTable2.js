@@ -2,6 +2,7 @@ import React from 'react'
 import { Table } from 'antd';
 import 'antd/dist/antd.css';
 
+
 const columns = [
   {
     title: 'Full Name',
@@ -65,6 +66,7 @@ for (let i = 0; i < 50; i++) {
     address: `London Park no. ${i}`,
   });
 }
+
 const DemoTable2 = () => {
     return (
         <div>
